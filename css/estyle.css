@@ -1,0 +1,186 @@
+/*FONTE DO GOOGLE PARA A PÁGINA*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*Regra para todos os dispositivos*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 40rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center;/* Horizontal */
+    justify-content: space-around;/* Vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 40rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+    margin-bottom: 10px;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-acount {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    width: 10rem;
+    height: 3rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('../img/disponivel-aple.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('../img/disponivel-google-play-badge.png');
+}
+
+/* FIM REGRAS PARA TODOS OS DISPOSITIVOS*/
+
+
+/* INICIO REGRAS PARA DISPOSITIVOS DE IMPRESSÃO */
+
+@media print {}
+
+
+/* FIM REGRAS PARA DISPOSITIVOS DE IMPRESSÃO */
+
+/* INICIO REGRAS PARA DISPOSITIVOS MÓVEIS. POR EXEMPLO: SMARTHPHONES */
+
+@media only screen and (max-width: 680px) {
+    .instagram-wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .instagram-continue {
+        width: 100%;
+        height: auto;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .app-download {
+        width: 8.3rem;
+        height: 2.4rem;
+        background-size: cover;
+    }
+
+}
+
+/* FIM REGRAS PARA DISPOSITIVOS MÓVEIS. POR EXEMPLO: SMARTHPHONES */
+
+/* INICIO REGRAS PARA DISPOSITIVOS MÓVEIS MÉDIOS. POR EXEMPLO: TABLETS */
+
+@media only screen and (min-width: 681px) and (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+
+/* FIM REGRAS PARA DISPOSITIVOS MÓVEIS MÉDIOS. POR EXEMPLO: TABLETS */
